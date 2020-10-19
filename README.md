@@ -1,10 +1,18 @@
 # ReTabs
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+This is a chrome extension for quickly reopening recently closed tabs or windows.
 
 ## Install
 
-	$ npm install
+chrome web store
+
+## Screenshot
+
+![](promo/screenshot_1.jpeg)
+
+![](promo/screenshot_2.jpeg)
+
+![](promo/screenshot_3.jpeg)
 
 ## Development
 
@@ -19,18 +27,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
     npm run build firefox
     npm run build opera
     npm run build edge
-
-## Environment
-
-The build tool also defines a variable named `process.env.NODE_ENV` in your scripts. 
-
-## Docs
-
-* [webextension-toolbox](https://github.com/HaNdTriX/webextension-toolbox)
-
-session
-device session
-history
-top sites
-// bookmarks
-save tabs, manager tabs
