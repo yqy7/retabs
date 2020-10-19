@@ -1,0 +1,24 @@
+{
+  "name": "ReTabs",
+  "version": "0.0.1",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "scripts": {
+    "dev": "webextension-toolbox dev",
+    "build": "webextension-toolbox build"
+  },
+  "devDependencies": {
+    "@types/chrome": "0.0.124",
+    "bootstrap": "^4.5.2",
+    "bootstrap-vue": "^2.17.3",
+    "css-loader": "^4.3.0",
+    "dayjs": "^1.9.1",
+    "lodash": "^4.17.20",
+    "style-loader": "^1.2.1",
+    "ts-loader": "^8.0.4",
+    "typescript": "^4.0.3",
+    "vue": "^2.6.12",
+    "vue-loader": "^15.9.3",
+    "vue-template-compiler": "^2.6.12",
+    "webextension-toolbox": "latest"
+  }
+}

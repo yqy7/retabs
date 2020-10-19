@@ -1,0 +1,46 @@
+{
+  "appName": {
+    "message": "ReTabs",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "ReTabs",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "ReTabs",
+    "description": "The title of the browser action button"
+  },
+  "recentlyClosedWindowsAndTabs": {
+    "message": "Recently closed windows and tabs",
+    "description": ""
+  },
+  "openInNewWindow": {
+    "message": "Open in new window",
+    "description": ""
+  },
+  "history": {
+    "message": "History",
+    "description": ""
+  },
+  "showMore": {
+    "message": "Show more...",
+    "description": ""
+  },
+  "showLess": {
+    "message": "Show less...",
+    "description": ""
+  },
+  "moreHistory": {
+    "message": "More history...",
+    "description": ""
+  },
+  "settings": {
+    "message": "Settings",
+    "description": ""
+  }
+}

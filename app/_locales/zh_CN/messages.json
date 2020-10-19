@@ -1,0 +1,46 @@
+{
+  "appName": {
+    "message": "ReTabs",
+    "description": "The name of the application"
+  },
+  "appShortName": {
+    "message": "ReTabs",
+    "description": "The short_name (maximum of 12 characters recommended) is a short version of the app's name."
+  },
+  "appDescription": {
+    "message": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "description": "The description of the application"
+  },
+  "browserActionTitle": {
+    "message": "ReTabs",
+    "description": "The title of the browser action button"
+  },
+  "recentlyClosedWindowsAndTabs": {
+    "message": "最近关闭的窗口和标签",
+    "description": ""
+  },
+  "openInNewWindow": {
+    "message": "新窗口打开",
+    "description": ""
+  },
+  "history": {
+    "message": "历史记录",
+    "description": ""
+  },
+  "showMore": {
+    "message": "显示更多...",
+    "description": ""
+  },
+  "showLess": {
+    "message": "显示更少...",
+    "description": ""
+  },
+  "moreHistory": {
+    "message": "更多历史记录...",
+    "description": ""
+  },
+  "settings": {
+    "message": "设置",
+    "description": ""
+  }
+}
