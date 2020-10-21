@@ -4,7 +4,7 @@ This is a chrome extension for quickly reopening recently closed tabs or windows
 
 ## Install
 
-chrome web store
+https://chrome.google.com/webstore/detail/retabs/miallpgffieifeemamnjjiabgdhlcefn
 
 ## Screenshot
 
