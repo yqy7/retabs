@@ -1,24 +1,7 @@
-import Vue from 'vue';
+import { createApp } from 'vue'
+import popup from "../component/popup.vue"
+import 'normalize.css/normalize.css'
 
-import {BootstrapVue, BootstrapVueIcons} from 'bootstrap-vue';
-
-import 'bootstrap/dist/css/bootstrap.css'
-import 'bootstrap-vue/dist/bootstrap-vue.css'
-
-import popup from "../component/popup.vue";
-
-Vue.use(BootstrapVue);
-Vue.use(BootstrapVueIcons);
-
-Vue.mixin({
-    methods: {
-        i18n: chrome.i18n.getMessage,
-    }
-});
-
-new Vue({
-    'el': '#app',
-    components: {
-        'app-root': popup
-    }
-});
+const app = createApp(popup)
+app.config.globalProperties.i18n = chrome.i18n.getMessage
+app.mount('#app')

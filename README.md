@@ -27,3 +27,4 @@ https://chrome.google.com/webstore/detail/retabs/miallpgffieifeemamnjjiabgdhlcef
     npm run build firefox
     npm run build opera
     npm run build edge
+

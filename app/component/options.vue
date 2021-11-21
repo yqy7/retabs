@@ -4,55 +4,48 @@
       <img :src="imgUrl" style="margin-right: 10px;">
       ReTabs
     </div>
-    <div class="content-panel container">
+    <div class="content-panel">
       <div class="setting-item">
-        <b-form-checkbox size="lg" v-model="disablePopup" switch @change="changeDisablePopup">Disable Popup</b-form-checkbox>
+        <el-switch v-model="disablePopup" @change="changeDisablePopup" active-text="Disable Popup" />
       </div>
     </div>
   </div>
 </template>
 
 <script lang="ts">
-export default {
-  data() {
-    return {
-      disablePopup: false,
-      imgUrl: chrome.extension.getURL("images/icon-32x32@2x.png")
-    }
-  },
-  created() {
-    chrome.storage.local.get('disablePopup', (result) => {
-      this.disablePopup = result['disablePopup'];
-    });
-  },
-  methods: {
-    changeDisablePopup(disabled: boolean) {
-      this.disablePopup = disabled;
-      chrome.storage.local.set({disablePopup: disabled});
-      let listener = function (tab:Tab) {
-        chrome.sessions.getRecentlyClosed({maxResults: 1}, sessions => {
-          if (sessions[0]) {
-            let sessionId = sessions[0].tab ? sessions[0].tab.sessionId : sessions[0].window.sessionId;
-            chrome.sessions.restore(sessionId, (restoredSession: Session) => {
-              console.log(restoredSession);
-            });
-          }
-        });
-      };
+import { defineComponent, ref } from "vue";
 
-      if (disabled) {
-        chrome.browserAction.onClicked.addListener(listener);
-        chrome.browserAction.setPopup({popup: ''});
-      } else {
-        chrome.browserAction.onClicked.removeListener(listener);
-        chrome.browserAction.setPopup({popup: 'pages/popup.html'});
-      }
+export default defineComponent({
+  setup() {
+    let disablePopup = ref(false)
+    let imgUrl = ref(chrome.extension.getURL("images/icon-32x32@2x.png"))
+
+    chrome.storage.local.get('disablePopup', result => {
+      console.log('result.disablePopup', result['disablePopup'])
+      disablePopup.value = !!result['disablePopup']
+      console.log(disablePopup)
+    });
+
+    const changeDisablePopup = (disabled: boolean) => {
+      chrome.storage.local.set({disablePopup: disabled}, () => {
+        disablePopup.value = disabled
+      });
+    }
+
+    return {
+      disablePopup,
+      imgUrl,
+      changeDisablePopup,
     }
   }
-}
+})
 </script>
 
 <style scoped>
+img {
+  vertical-align: middle;
+}
+
 .options {
   position: fixed;
   top: 0;
@@ -63,7 +56,15 @@ export default {
   height: 100%;
   width: 100%;
   flex-direction: column;
+  font-size: 1.5em;
 }
+
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  color: darkgrey;
+}
+
 .content-panel {
   margin-top: 30px;
   height: 50%;
@@ -76,11 +77,7 @@ export default {
   justify-content: center;
   flex-direction: column;
 }
-.title {
-  font-size: 2em;
-  font-weight: bold;
-  color: darkgrey;
-}
+
 .setting-item {
   margin: 10px 0;
 }
