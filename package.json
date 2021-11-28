@@ -20,6 +20,7 @@
     "unplugin-vue-components": "^0.17.2",
     "vue": "^3.2.22",
     "vue-loader": "^16.8.3",
+    "vue-router": "^4.0.12",
     "webextension-toolbox": "latest"
   }
 }

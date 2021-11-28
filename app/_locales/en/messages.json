@@ -42,5 +42,41 @@
   "settings": {
     "message": "Settings",
     "description": ""
+  },
+  "search": {
+    "message": "Search",
+    "description": ""
+  },
+  "searchHistory": {
+    "message": "Search history",
+    "description": ""
+  },
+  "visitCount": {
+    "message": "Visit count",
+    "description": ""
+  },
+  "delete": {
+    "message": "Delete",
+    "description": ""
+  },
+  "copyLink": {
+    "message": "Copy link",
+    "description": ""
+  },
+  "chromeHistory": {
+    "message": "Chrome History",
+    "description": ""
+  },
+  "options": {
+    "message": "Options",
+    "description": ""
+  },
+  "session": {
+    "message": "Session",
+    "description": ""
+  },
+  "disablePopup": {
+    "message": "Disable Popup",
+    "description": ""
   }
 }

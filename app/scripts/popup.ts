@@ -1,4 +1,4 @@
-import { createApp } from 'vue'
+import {createApp} from 'vue'
 import popup from "../component/popup.vue"
 import 'normalize.css/normalize.css'
 

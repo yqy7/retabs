@@ -42,5 +42,41 @@
   "settings": {
     "message": "设置",
     "description": ""
+  },
+  "search": {
+    "message": "搜索",
+    "description": ""
+  },
+  "searchHistory": {
+    "message": "搜索历史记录",
+    "description": ""
+  },
+  "visitCount": {
+    "message": "访问次数",
+    "description": ""
+  },
+  "delete": {
+    "message": "删除",
+    "description": ""
+  },
+  "copyLink": {
+    "message": "拷贝链接",
+    "description": ""
+  },
+  "chromeHistory": {
+    "message": "Chrome历史记录",
+    "description": ""
+  },
+  "options": {
+    "message": "设置",
+    "description": ""
+  },
+  "session": {
+    "message": "会话",
+    "description": ""
+  },
+  "disablePopup": {
+    "message": "禁用弹出窗口",
+    "description": ""
   }
 }

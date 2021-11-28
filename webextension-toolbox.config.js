@@ -1,7 +1,7 @@
 // 配置 webextension-toolbox 中的webpack
 const webpack = require('webpack')
 const {VueLoaderPlugin} = require('vue-loader/dist/index')
-const {resolve} = require('path')
+const {resolve, join} = require('path')
 const GlobEntriesPlugin = require('webpack-watched-glob-entries-plugin')
 
 const Components = require('unplugin-vue-components/webpack')
@@ -61,7 +61,6 @@ module.exports = {
       ]
     )
     config.devtool = 'inline-source-map';
-
     console.log(config)
     return config
   }
