@@ -60,7 +60,7 @@ module.exports = {
         resolve('app', '?(scripts)/contentscript.ts'),
       ]
     )
-    config.devtool = 'inline-source-map';
+    // config.devtool = 'inline-source-map';
     console.log(config)
     return config
   }
