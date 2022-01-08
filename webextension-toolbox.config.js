@@ -1,7 +1,7 @@
 // 配置 webextension-toolbox 中的webpack
 const webpack = require('webpack')
 const {VueLoaderPlugin} = require('vue-loader/dist/index')
-const {resolve, join} = require('path')
+const {resolve} = require('path')
 const GlobEntriesPlugin = require('webpack-watched-glob-entries-plugin')
 
 const Components = require('unplugin-vue-components/webpack')

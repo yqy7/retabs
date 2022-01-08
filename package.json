@@ -1,7 +1,7 @@
 {
   "name": "retabs",
   "version": "0.1.1",
-  "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+  "description": "This is a chrome extension for quickly reopening recently closed tabs or windows.",
   "scripts": {
     "dev": "webextension-toolbox dev",
     "build": "webextension-toolbox build"
